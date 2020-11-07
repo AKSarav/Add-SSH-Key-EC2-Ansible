@@ -1,0 +1,7 @@
+[hosts_to_add_key]
+54.34.23.112 ansible_ssh_port=2222 ansible_user=ubuntu
+server1.gritfy.infra  ansible_user=ec2-user
+webserver.gritfy.com ansible_user=centos
+
+[hosts_to_add_key:vars]
+ansible_ssh_common_args="-o StrictHostKeyChecking=no"
